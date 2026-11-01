@@ -1,0 +1,20 @@
+name: lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  example-vault:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Index and lint the example vault
+        run: npm test
+      - name: Make sure no private files are tracked
+        run: |
+          bad=$(git ls-files | grep -E '^(raw|wiki)/|^(agents|CLAUDE)\.md$|^\.kb/|^\.obsidian/' || true)
+          if [ -n "$bad" ]; then echo "Private files are tracked:"; echo "$bad"; exit 1; fi
