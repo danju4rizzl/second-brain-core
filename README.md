@@ -1,4 +1,4 @@
-# Kavara Brain: a privacy-focused, self-improving LLM second brain
+# Kavara Brain: a privacy-focused, self-improving LLM second brain 🧠
 
 **One repo, every AI tool.** Use it with Claude (plugin with guard hooks), or clone it for Cursor, Codex, Antigravity, Grok Build, Aider or any agent that can read and write files.
 
@@ -41,7 +41,7 @@ git clone https://github.com/danju4rizzl/second-brain.git my-second-brain
 cd my-second-brain
 ```
 
-1. **Gather raw material.** The best start is a **20–30 minute voice brain dump** (transcribed) about your goals, work, customers, offers, team, tools, projects and writing style. Add a CV, website copy, a price list, Notion/Google Docs exports, anything. It doesn't need to be organised.
+1. **Gather raw material.** The best start is a **20–30 minute voice brain dump** (transcribed) about your goals, work, customers, offers, team, tools, projects and writing style. Add a conversation, CV, website copy, a price list, Notion/Google Docs exports, anything. It doesn't need to be organised.
 2. **Open the folder in your AI agent** and say:
 
    > **Read prompts/install.md and follow it.**
@@ -158,8 +158,9 @@ git pull   # updates prompts/, scripts/, templates/, docs/; your private files a
 
 ## Credits
 
-- Method: Andrej Karpathy's LLM knowledge-base workflow (April 2026).
 - Built by Danjuma Ashiwaju-Garba ([Kavara Digital Global](https://kavaradigital.com)).
+
+- Method: Andrej Karpathy's LLM knowledge-base workflow (April 2026).
 
 ## License
 
