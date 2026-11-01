@@ -1,4 +1,6 @@
-# Second Brain: a privacy-focused, self-improving LLM knowledge base
+# Kavara Brain: a privacy-focused, self-improving LLM second brain
+
+**One repo, every AI tool.** Use it with Claude (plugin with guard hooks), or clone it for Cursor, Codex, Antigravity, Grok Build, Aider or any agent that can read and write files.
 
 A personal (or small-business) second brain that **an AI writes and you read**. It follows Andrej Karpathy's LLM knowledge-base workflow ([method](docs/method.md)): dump raw material in a folder, let an LLM *compile* it into a linked Markdown wiki, browse it in Obsidian, ask it questions, and file every useful answer back in. The wiki gets denser and better linked with every loop.
 
@@ -7,11 +9,32 @@ A personal (or small-business) second brain that **an AI writes and you read**. 
 - **Self-checking.** A zero-dependency script catches broken links, missing sources, orphan pages, stale notes and raw files nobody has compiled yet.
 - **Private by default.** The `.gitignore` is an allowlist: only engine files can ever be committed. Your notes stay on your machine.
 
-> This repository is the **engine only**: prompts, scripts, templates and a fictional demo. It contains no one's personal data.
+> This repository is the **Kavara Brain Engine**: prompts, scripts, templates and a fictional demo. It contains no one's personal data.
 
 ---
 
-## Quick start
+## Install: pick your tool
+
+| You use… | Do this |
+|---|---|
+| **Claude Code** | `/plugin marketplace add danju4rizzl/second-brain` then `/plugin install kavara-brain@kavara-brain`. Open a folder and run `/brain-install`. You get slash commands, an auditor agent and guard hooks. |
+| **Claude desktop app** | Download `kavara-brain.plugin` from the [plugin releases](https://github.com/danju4rizzl/kavara-brain-claude/releases) and install it, then say "set up a second brain in this folder". |
+| **Cursor, Codex, Antigravity, Grok Build, Aider, other agents** | `git clone https://github.com/danju4rizzl/second-brain.git my-second-brain`, open the folder in your agent and say **"Read prompts/install.md and follow it."** |
+
+Stuck? See the [FAQ & troubleshooting](docs/FAQ.md).
+
+## The Kavara Brain suite
+
+| Product | What it is | Status |
+|---|---|---|
+| **Kavara Brain Engine** (this repo) | Tool-agnostic core: prompts, `kb.mjs` lint/index script, templates, demo vault | ✅ v1.1.0 |
+| [**Kavara Brain for Claude**](https://github.com/danju4rizzl/kavara-brain-claude) | The engine plus a Claude skill (9 modes), `/brain-*` slash commands, an independent auditor agent and guard hooks (raw/ protection, secret scan, git privacy guard, auto-lint) | ✅ v0.1.0 |
+| **Kavara Brain Guard** | MCP server + git hooks: the same hard guards for Cursor, Antigravity, Codex, Grok Build | 🛠 planned |
+| **Kavara Brain Sync** | Encrypted private sync of your notes across computers | 🛠 planned |
+
+Built by [Kavara Digital Global](https://kavaradigital.com).
+
+## Quick start (any tool)
 
 ```bash
 git clone https://github.com/danju4rizzl/second-brain.git my-second-brain
@@ -52,8 +75,11 @@ Want to see the result first? Browse the fictional [`example/`](example/) vault 
 
 ```
 second-brain/
-├── README.md · LICENSE · package.json · .gitignore (allowlist)
-├── docs/method.md        ← the method, and why there's no RAG
+├── README.md · LICENSE · CHANGELOG.md · SECURITY.md · package.json · .gitignore (allowlist)
+├── .claude-plugin/       ← pointer so Claude Code can install the plugin from this repo
+├── docs/
+│   ├── method.md         ← the method, and why there's no RAG
+│   └── FAQ.md            ← FAQ & troubleshooting
 ├── prompts/
 │   ├── install.md        ← one-time setup interview
 │   ├── compile.md        ← raw/ → wiki/ (incremental)
@@ -125,6 +151,10 @@ Lint checks for broken `[[links]]`, missing frontmatter or sections, missing sou
 ```bash
 git pull   # updates prompts/, scripts/, templates/, docs/; your private files are untouched
 ```
+
+## More
+
+- [FAQ & troubleshooting](docs/FAQ.md) · [Method](docs/method.md) · [Changelog](CHANGELOG.md) · [Security & privacy reports](SECURITY.md)
 
 ## Credits
 

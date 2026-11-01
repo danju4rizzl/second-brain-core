@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "kavara-brain",
+  "description": "Kavara Brain: privacy-first, self-improving LLM second brain tools by Kavara Digital Global.",
+  "owner": { "name": "Danjuma Ashiwaju-Garba", "url": "https://github.com/danju4rizzl" },
+  "plugins": [
+    {
+      "name": "kavara-brain",
+      "description": "Kavara Brain for Claude: skill with 9 modes, /brain-* commands, brain-auditor agent and guard hooks.",
+      "version": "0.1.0",
+      "source": { "source": "github", "repo": "danju4rizzl/kavara-brain-claude" },
+      "category": "productivity"
+    }
+  ]
+}
