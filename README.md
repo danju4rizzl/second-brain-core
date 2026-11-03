@@ -17,9 +17,9 @@ A personal (or small-business) second brain that **an AI writes and you read**. 
 
 | You use… | Do this |
 |---|---|
-| **Claude Code** | `/plugin marketplace add danju4rizzl/second-brain` then `/plugin install kavara-brain@kavara-brain`. Open a folder and run `/brain-install`. You get slash commands, an auditor agent and guard hooks. |
+| **Claude Code** | `/plugin marketplace add danju4rizzl/second-brain-core` then `/plugin install kv-brain@kavara`. Open a folder and run `/kv-brain:install`. You get slash commands, an auditor agent and guard hooks. |
 | **Claude desktop app** | Download `kavara-brain.plugin` from the [plugin releases](https://github.com/danju4rizzl/kavara-brain-claude/releases) and install it, then say "set up a second brain in this folder". |
-| **Cursor, Codex, Antigravity, Grok Build, Aider, other agents** | `git clone https://github.com/danju4rizzl/second-brain.git my-second-brain`, open the folder in your agent and say **"Read prompts/install.md and follow it."** |
+| **Cursor, Codex, Antigravity, Grok Build, Aider, other agents** | `git clone https://github.com/danju4rizzl/second-brain-core.git my-second-brain`, open the folder in your agent and say **"Read prompts/install.md and follow it."** |
 
 Stuck? See the [FAQ & troubleshooting](docs/FAQ.md).
 
@@ -37,7 +37,7 @@ Built by [Kavara Digital Global](https://kavaradigital.com).
 ## Quick start (any tool)
 
 ```bash
-git clone https://github.com/danju4rizzl/second-brain.git my-second-brain
+git clone https://github.com/danju4rizzl/second-brain-core.git my-second-brain
 cd my-second-brain
 ```
 

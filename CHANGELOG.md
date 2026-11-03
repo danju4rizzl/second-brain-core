@@ -2,6 +2,13 @@
 
 All notable changes to the Kavara Brain Engine. Format: [Keep a Changelog](https://keepachangelog.com); versions follow [SemVer](https://semver.org).
 
+## [1.1.1] - 2026-11-03
+
+### Changed
+- Claude plugin renamed to **`kv-brain`** (marketplace **`kavara`**): install with `/plugin marketplace add danju4rizzl/second-brain-core` then `/plugin install kv-brain@kavara`; commands are now `/kv-brain:install`, `/kv-brain:ask`, etc.
+- Clone and install links now use the repo name `second-brain-core`.
+- No changes to prompts, scripts or templates.
+
 ## [1.1.0] - 2026-11-01
 
 ### Added

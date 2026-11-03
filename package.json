@@ -1,6 +1,6 @@
 {
   "name": "second-brain",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Privacy-focused, self-improving LLM knowledge base (Karpathy method): raw → compile → view → query → file back → lint.",
   "license": "MIT",
