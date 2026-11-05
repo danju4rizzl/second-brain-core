@@ -52,24 +52,7 @@ cd my-second-brain
 Want to see the result first? Browse the fictional [`example/`](example/) vault (Ada's Oven, a home bakery).
 
 ## How it works
-
-```
-   ┌──────────── 1. INGEST ────────────┐
-   │ raw/  ← dump anything, never edit │
-   └───────────────┬───────────────────┘
-                   ▼
-   2. COMPILE  (prompts/compile.md)    →  wiki/  topic pages with sources, open questions, conflicts
-                   ▼
-   3. VIEW     (you, in Obsidian: graph · backlinks · tags)
-                   ▼
-   4. QUERY    (prompts/query.md, whole wiki in context, answers cite pages)
-                   ▼
-   5. FILE BACK (prompts/file-output.md)  →  wiki/07-outputs/ + updated pages + wiki/gaps.md
-                   ▼
-   6. LINT     (scripts/kb.mjs lint + prompts/lint.md)
-                   │
-                   └──→ gaps drive new research (prompts/research.md) → back to raw/
-```
+<img width="500" height="500" alt="knowledge_base_workflow" src="https://github.com/user-attachments/assets/bbe8d30d-9e62-4985-9c35-490e9f2dd325" />
 
 ### What's in the box
 
